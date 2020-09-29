@@ -1,0 +1,127 @@
+body{
+    background-image: url("../../images/laboratoire.jpg");
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    line-height: 1.5;
+}
+
+.login-div{
+    display: flex;
+    box-shadow: -7px 0 10px dimgrey;
+    position: absolute;
+    margin-top: -10px;
+    height: 100%;
+    min-width: 35%;
+    background-color: white;
+    right: 0;
+}
+.login-div-elt{
+    margin-top: 25%;
+    margin-left: 15%;
+}
+.logo{
+    margin: 30% 0 30% 0;
+    height: 15%;
+    width: 150%;
+    background-image: url("../../images/logo-big.png");
+    background-repeat: no-repeat;
+}
+form{
+    text-align: center;
+}
+.form-elt {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 1rem!important;
+}
+.form-div-elt{
+    display: flex;
+}
+form span {
+    padding: 13px 20px;
+    color: #495057;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 5px 0 0 5px;
+}
+form input{
+    display: block;
+    min-width: 150%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-div-submit {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    width: 200%;
+}
+.form-div-elt-submit{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+form button{
+    font-size: inherit;
+    line-height: inherit;
+    background-color: #e9ecef;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+form button:hover{
+    background-color: #c4ccd4;
+}
+.form-div-elt-a{
+    display: flex;
+    padding-left: 35%;
+}
+form a{
+    color: black;
+    padding-top: 5px;
+    text-align: center;
+    right: 0;
+    text-decoration: none;
+}
+.alert{
+    position: relative;
+    margin-left: -15%;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+@media only screen and (max-width: 1500px){
+    .login-div{
+        min-width: 100%;
+    }
+    .login-div-elt{
+        margin-top: 15%;
+        margin-left: 25%;
+    }
+
+}
+@media only screen and (max-height: 400px){
+    .logo {
+        margin: 0;
+        height: 0;
+        background-image: none;
+    }
+}
