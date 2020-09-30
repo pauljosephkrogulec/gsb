@@ -5,13 +5,11 @@ namespace App\Controller;
 
 use App\Entity\Users;
 use Doctrine\ORM\EntityManagerInterface;
+use Swift_Mailer;
+use Swift_Message;
 use Swift_SmtpTransport;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Mailer\Mailer;
-use Symfony\Component\Mailer\MailerInterface;
-use Symfony\Component\Mime\Email;
-use Symfony\Component\Mailer\Transport\Smtp\EsmtpTransport;
 use Symfony\Component\Routing\Annotation\Route;
 
 class SecurityController extends AbstractController
@@ -23,8 +21,10 @@ class SecurityController extends AbstractController
     {
         $this->em = $em;
     }
+
     /**
      * @Route ("/",name="Login")
+     * @param null $mail
      * @return Response
      */
     public function HomeLogin($mail = null){
@@ -63,7 +63,7 @@ class SecurityController extends AbstractController
     }
 
     /**
-     * @Route ("/forgotPassword{token}", name="forgetPassword")
+     * @Route ("/forgotPassword", name="forgetPassword")
      * @return Response
      */
     public function HomeForgetPassword(){
@@ -76,9 +76,9 @@ class SecurityController extends AbstractController
             ->setUsername('d6ccf96511da7a')
             ->setPassword('74af373be7100d')
         ;
-        $mailer = new \Swift_Mailer($transport);
+        $mailer = new Swift_Mailer($transport);
         $user = $this->getDoctrine()->getRepository(Users::class)->findOneBy(['id' => $id]);
-        $message = (new \Swift_Message('Password'))
+        $message = (new Swift_Message('Password'))
             ->setFrom('no-reply@krogulec.xyz')
             ->setTo($user->getEmail())
             ->setBody(
