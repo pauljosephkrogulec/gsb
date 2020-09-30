@@ -20,7 +20,7 @@ class Users
     private $id;
 
     /**
-     * @ORM\OneToOne(targetEntity=vehicles::class, cascade={"persist", "remove"})
+     * @ORM\OneToOne(targetEntity=Vehicles::class, cascade={"persist", "remove"})
      */
     private $vehicle;
 

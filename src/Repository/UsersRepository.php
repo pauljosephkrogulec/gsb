@@ -47,4 +47,21 @@ class UsersRepository extends ServiceEntityRepository
         ;
     }
     */
+    public function Login($mail,$psd){
+        return $this->createQueryBuilder('u')
+            ->select('u.id,u.email')
+            ->andWhere('u.email = :email AND u.password = :psd')
+            ->setParameter(':email',$mail)
+            ->setParameter(':psd',$psd)
+            ->getQuery()
+            ->getOneOrNullResult();
+    }
+    public function findmail($mail){
+        return $this->createQueryBuilder('u')
+            ->select('u.id,u.email')
+            ->andWhere('u.email = :email')
+            ->setParameter(':email',$mail)
+            ->getQuery()
+            ->getOneOrNullResult();
+    }
 }

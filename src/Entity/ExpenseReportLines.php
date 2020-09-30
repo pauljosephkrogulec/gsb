@@ -18,7 +18,7 @@ class ExpenseReportLines
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity=expenseReports::class, inversedBy="expenseReportLines")
+     * @ORM\ManyToOne(targetEntity=ExpenseReports::class, inversedBy="expenseReportLines")
      * @ORM\JoinColumn(nullable=false)
      */
     private $expense_report;
