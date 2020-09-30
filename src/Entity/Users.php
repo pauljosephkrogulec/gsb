@@ -70,14 +70,17 @@ class Users
     private $expenseReports;
 
     /**
-     * @ORM\ManyToMany(targetEntity=Roles::class, inversedBy="users")
+     * @ORM\OneToOne(targetEntity=Roles::class, cascade={"persist", "remove"})
+     * @ORM\JoinColumn(nullable=false)
      */
-    private $roles;
+    private $role;
+
+
+
 
     public function __construct()
     {
         $this->expenseReports = new ArrayCollection();
-        $this->roles = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -224,29 +227,16 @@ class Users
         return $this;
     }
 
-    /**
-     * @return Collection|Roles[]
-     */
-    public function getRoles(): Collection
+    public function getRole(): ?Roles
     {
-        return $this->roles;
+        return $this->role;
     }
 
-    public function addRole(Roles $role): self
+    public function setRole(Roles $role): self
     {
-        if (!$this->roles->contains($role)) {
-            $this->roles[] = $role;
-        }
+        $this->role = $role;
 
         return $this;
     }
 
-    public function removeRole(Roles $role): self
-    {
-        if ($this->roles->contains($role)) {
-            $this->roles->removeElement($role);
-        }
-
-        return $this;
-    }
 }

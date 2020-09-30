@@ -20,11 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3649c8b-93cf-408c-827d-60504ffd6d46" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/security/changePassword.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/bgc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/MailController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/security/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/security/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/repartition.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/schema-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/segmentation.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/si.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/UsersRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UsersRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/email/password-reset.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/email/password-reset.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Roles.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Roles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Home/Home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Home/Home.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,6 +170,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\gsb\public\images" />
       <recent name="D:\xampp\htdocs\gsb\templates" />
       <recent name="D:\xampp\htdocs\gsb" />
       <recent name="D:\xampp\htdocs\gsb\public" />
@@ -180,7 +189,9 @@
       <workItem from="1601406189477" duration="1722000" />
       <workItem from="1601452597275" duration="2303000" />
       <workItem from="1601455520839" duration="550000" />
-      <workItem from="1601462309453" duration="3168000" />
+      <workItem from="1601462309453" duration="3274000" />
+      <workItem from="1601473460159" duration="2463000" />
+      <workItem from="1601478849376" duration="4583000" />
     </task>
     <servers />
   </component>
@@ -207,9 +218,17 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1601405349559" />
+    <state x="-1230" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601484926866">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1230" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1080/0.0.1920.1080@-1920.0.1920.1080" timestamp="1601484926866" />
     <state x="655" y="305" key="FileChooserDialogImpl" timestamp="1601454849142">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="655" y="305" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1601454849142" />
+    <state x="-1151" y="263" key="NewPhpClassDialog" timestamp="1601484854340">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1151" y="263" key="NewPhpClassDialog/-1920.0.1920.1080/0.0.1920.1080@-1920.0.1920.1080" timestamp="1601484854340" />
   </component>
 </project>
