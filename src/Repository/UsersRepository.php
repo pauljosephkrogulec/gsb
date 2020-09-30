@@ -64,4 +64,12 @@ class UsersRepository extends ServiceEntityRepository
             ->getQuery()
             ->getOneOrNullResult();
     }
+    public function findToken($token){
+        return $this->createQueryBuilder('u')
+            ->select('u.id')
+            ->andWhere('u.token = :token')
+            ->setParameter(':token',$token)
+            ->getQuery()
+            ->getOneOrNullResult();
+    }
 }

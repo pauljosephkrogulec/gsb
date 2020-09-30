@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3649c8b-93cf-408c-827d-60504ffd6d46" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/security/changePassword.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UsersRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UsersRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/email/password-reset.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/email/password-reset.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,6 +180,7 @@
       <workItem from="1601406189477" duration="1722000" />
       <workItem from="1601452597275" duration="2303000" />
       <workItem from="1601455520839" duration="550000" />
+      <workItem from="1601462309453" duration="3168000" />
     </task>
     <servers />
   </component>

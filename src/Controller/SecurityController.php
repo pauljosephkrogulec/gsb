@@ -9,6 +9,7 @@ use Swift_Mailer;
 use Swift_Message;
 use Swift_SmtpTransport;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -28,9 +29,6 @@ class SecurityController extends AbstractController
      * @return Response
      */
     public function HomeLogin($mail = null){
-        if($_GET!=array()){
-            $mail='ee';
-        }
         return $this->render('security/login.html.twig',  array(
             'last_username' => $mail,
             'error'         => '',
@@ -51,11 +49,10 @@ class SecurityController extends AbstractController
     {
         $psd = hash('sha512',$_POST['password']);
         $rep = $this->getDoctrine()->getRepository(Users::class)->Login($_POST['email'],$psd);
-        var_dump($rep);
         $_SESSION['id'] = $rep['id'];
         $_SESSION['email'] = $rep['email'];
         if($rep==NULL){
-            return $this->redirectToRoute('Login',array());
+            return $this->HomeLogin($_POST['email']);
         }else{
             return $this->redirectToRoute('HomePage');
         }
@@ -72,12 +69,19 @@ class SecurityController extends AbstractController
     }
     public function sendMail($id)
     {
+
+        $token = md5(uniqid(rand(), true));
         $transport = (new Swift_SmtpTransport('smtp.mailtrap.io', 25))
             ->setUsername('d6ccf96511da7a')
             ->setPassword('74af373be7100d')
         ;
         $mailer = new Swift_Mailer($transport);
         $user = $this->getDoctrine()->getRepository(Users::class)->findOneBy(['id' => $id]);
+        $token = md5(uniqid(rand(), true));
+        $user->setToken($token);
+        $this->em->persist($user);
+        $this->em->flush();
+
         $message = (new Swift_Message('Password'))
             ->setFrom('no-reply@krogulec.xyz')
             ->setTo($user->getEmail())
@@ -85,12 +89,12 @@ class SecurityController extends AbstractController
                 $this->renderView(
                 // templates/emails/registration.html.twig
                     'email/password-reset.html.twig',
-                    ['user' => $user]
+                    ['user' => $user, 'token' => $token]
                 ),
                 'text/html'
             );
         $mailer->send($message);
-        return $this->redirectToRoute('Login');
+        return $this->redirectToRoute('HomePage');
     }
     /**
      * @Route ("/sendingMail", name="mailing")
@@ -104,8 +108,39 @@ class SecurityController extends AbstractController
         else{
 
             $this->sendMail($rep['id']);
-            return $this->render('Home/Home.html.twig');
+            return $this->redirectToRoute("HomePage");
         }
 
+    }
+
+    /**
+     * @Route ("/resetPassword{token}", name="resetPassword")
+     * @param $token
+     * @return RedirectResponse|Response
+     */
+    public function resetPassword($token){
+        $rep = $this->getDoctrine()->getRepository(Users::class)->findToken($token);
+        if($rep==NULL){
+            return $this->redirectToRoute('Login');
+        }
+        return $this->render('security/changePassword.html.twig', ['token' => $token]);
+    }
+
+    /**
+     * @Route ("/changePassword{token}  ", name="changePassword")
+     * @param $token
+     */
+    public function changePassword($token){
+        $user = $this->getDoctrine()->getRepository(Users::class)->findOneBy(['token' => $token]);
+        if($user == NULL){
+            return $this->redirectToRoute('Login');
+        }
+        else{
+            $psd = hash('sha512',$_POST['password']);
+            $user->setPassword($psd);
+            $this->em->persist($user);
+            $this->em->flush();
+            return $this->HomeLogin($user->getEmail());
+        }
     }
 }
