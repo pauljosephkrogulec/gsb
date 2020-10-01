@@ -20,18 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3649c8b-93cf-408c-827d-60504ffd6d46" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/bgc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/MailController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/dashboard/dashboard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/security/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/security/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/repartition.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/schema-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/segmentation.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/si.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/equipements.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/gestion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/laboratoire.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Roles.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Roles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Users.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Home/Home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Home/Home.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +39,13 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -162,9 +166,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/gsb_web/gsb_application" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -191,7 +198,9 @@
       <workItem from="1601455520839" duration="550000" />
       <workItem from="1601462309453" duration="3274000" />
       <workItem from="1601473460159" duration="2463000" />
-      <workItem from="1601478849376" duration="4583000" />
+      <workItem from="1601478849376" duration="5215000" />
+      <workItem from="1601487575070" duration="5855000" />
+      <workItem from="1601531882356" duration="3065000" />
     </task>
     <servers />
   </component>

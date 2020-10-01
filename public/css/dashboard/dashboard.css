@@ -1,0 +1,78 @@
+body{
+    background-image: url('../../images/bgc.png');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.cards {
+    margin: -5% 0 0 10%;
+    padding: 15px;
+    display: flex;
+    min-width: 60%;
+    flex-flow: row wrap;
+}
+
+.card {
+
+    justify-content: center;
+    display: flex;
+    margin: 15px;
+    width: 40%;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.card:hover .card__inner {
+    transform: scale(1.10);
+
+}
+
+.card__inner {
+    width: 100%;
+    padding: 30px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    background-color: white;
+    color: #8a8a8a;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+.card:after {
+     transition: all 0.5s ease-in-out;
+ }
+
+.fa {
+    width: 150%;
+    left: 0;
+}
+.card .a{
+    text-align: center;
+}
+.fa-right{
+    text-align: right;
+}
+@media  only screen and (max-width: 1200px){
+    .cards{
+        display: flex;
+    }
+    .card{
+        height: 200px;
+        width: 80%;
+    }
+    .card__inner{
+        align-items: center;
+        font-size: 2em;
+    }
+
+}
+
