@@ -2,16 +2,15 @@
 
 
 namespace App\Controller;
-use App\Entity\Users;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
 
-class HomeController extends AbstractController{
+class DashboardController extends AbstractController{
 
 
     /**
-     * @Route ("/Home", name="HomePage")
+     * @Route ("/Dashboard", name="DashBoard")
      */
     public function Home(SessionInterface $request)
     {
@@ -19,6 +18,6 @@ class HomeController extends AbstractController{
         if($user == array()){
             return $this->redirectToRoute('Login');
         }
-        return $this->render("Home/Home.html.twig");
+        return $this->render("Dashboard/Dashboard.html.twig", array('user' => $user[0]));
     }
 }

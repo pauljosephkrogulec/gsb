@@ -1,0 +1,104 @@
+{% extends "main.html.twig" %}
+
+    {% block body %}
+    <div class="all-card " style="{% if user.vehicle !=NULL and user.role.id == 2%}margin-top: 10%;height: 50%{% endif %}">
+        <div class="cards">
+
+            {% if user.role.id == 1 %}
+            <div class=" card ">
+                <div class="card__inner">
+                    <i class="fa fa-user fa-lg"></i>
+                    <div class="a">
+                        <a href="{{ path('alluser') }}">Les Visiteurs</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" card">
+                <div class="card__inner">
+                    <i class="fa fa-car fa-lg fa-right"></i>
+
+                    <div class="a">
+                        <a href="{{ path('allcar') }}">Les Voitures</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class=" card">
+                <div class="card__inner">
+                    <i class="fa fa-file fa-lg "></i>
+                    <div class="a">
+                        <a href="{{ path('allreport') }}">Les Frais</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" card">
+                <div class="card__inner">
+
+                    <i class="fa fa-car fa-lg fa-right"></i>
+                    <div class="a">
+                        <a href="{{ path('allbrands') }}">Les Marques</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" card">
+                <div class="card__inner">
+                    <i class="fa fa-user-md"></i>
+                    <div class="a">
+                        <a href="{{ path('alldoctor') }}">Les Docteurs</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" card">
+                <div class="card__inner">
+
+                    <i class="fa fa-clinic-medical fa-lg fa-right"></i>
+                    <div class="a">
+                        <a href="{{ path('alloffice') }}">Les Cabinets</a>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            <div class=" card">
+                <div class="card__inner">
+                    <i class="fa fa-file fa-lg "></i>
+                    <div class="a">
+                        <a>Mes Frais</a>
+                    </div>
+                </div>
+            </div>
+
+            {% if user.vehicle != NULL %}
+            <div class=" card">
+                <div class="card__inner">
+                    <i class="fa fa-car fa-lg fa-right"></i>
+                    <div class="a">
+                        <a>Ma Voitures</a>
+                    </div>
+                </div>
+            </div>
+                <div class=" card">
+                <div class="card__inner">
+
+                    <i class="fa fa-car-crash fa-lg "></i>
+                    <div class="a">
+                        <a>Mes reparations</a>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            <div class=" card">
+                <div class="card__inner">
+                    <i class="fa fa-handshake fa-lg fa-right"></i>
+                    <div class="a">
+                        <a>Mes Visites</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {% endblock %}

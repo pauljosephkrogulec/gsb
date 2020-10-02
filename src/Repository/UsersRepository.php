@@ -20,7 +20,7 @@ class UsersRepository extends ServiceEntityRepository
     }
 
     // /**
-    //  * @return Users[] Returns an array of Users objects
+    //  * @return User[] Returns an array of User objects
     //  */
     /*
     public function findByExampleField($value)
@@ -37,7 +37,7 @@ class UsersRepository extends ServiceEntityRepository
     */
 
     /*
-    public function findOneBySomeField($value): ?Users
+    public function findOneBySomeField($value): ?User
     {
         return $this->createQueryBuilder('u')
             ->andWhere('u.exampleField = :val')

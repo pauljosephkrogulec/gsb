@@ -4,13 +4,11 @@
 namespace App\Controller;
 
 use App\Entity\Users;
-use phpDocumentor\Reflection\Types\Null_;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
-use function Sodium\add;
 
 class SecurityController extends AbstractController
 {
@@ -35,7 +33,7 @@ class SecurityController extends AbstractController
         $user = $request->get('user',[]);
         unset($user[0]);
         $request->set('user',$user);
-        return $this->redirectToRoute('HomePage');
+        return $this->redirectToRoute('DashBoard');
     }
 
     /**
@@ -54,7 +52,7 @@ class SecurityController extends AbstractController
             $users = $session->get('user',[]);
             $users[0] = $user;
             $session->set('user',$users);
-            return $this->redirectToRoute('HomePage');
+            return $this->redirectToRoute('DashBoard');
         }
 
     }
