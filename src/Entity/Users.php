@@ -70,11 +70,10 @@ class Users
     private $expenseReports;
 
     /**
-     * @ORM\OneToOne(targetEntity=Roles::class, cascade={"persist", "remove"})
+     * @ORM\ManyToOne(targetEntity=Roles::class, cascade={"persist", "remove"})
      * @ORM\JoinColumn(nullable=false)
      */
-    private $role;
-
+    private $Role;
 
 
 
@@ -229,12 +228,12 @@ class Users
 
     public function getRole(): ?Roles
     {
-        return $this->role;
+        return $this->Role;
     }
 
     public function setRole(Roles $role): self
     {
-        $this->role = $role;
+        $this->Role = $role;
 
         return $this;
     }

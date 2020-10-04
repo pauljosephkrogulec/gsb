@@ -32,6 +32,21 @@ class DoctorOffice
      */
     private $postal_code;
 
+    /**
+     * @ORM\Column(type="string", length=80)
+     */
+    private $Name;
+
+    /**
+     * @ORM\Column(type="string", length=191)
+     */
+    private $Latitude;
+
+    /**
+     * @ORM\Column(type="string", length=191)
+     */
+    private $longitude;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -69,6 +84,42 @@ class DoctorOffice
     public function setPostalCode(string $postal_code): self
     {
         $this->postal_code = $postal_code;
+
+        return $this;
+    }
+
+    public function getName(): ?string
+    {
+        return $this->Name;
+    }
+
+    public function setName(string $Name): self
+    {
+        $this->Name = $Name;
+
+        return $this;
+    }
+
+    public function getLatitude(): ?string
+    {
+        return $this->Latitude;
+    }
+
+    public function setLatitude(string $Latitude): self
+    {
+        $this->Latitude = $Latitude;
+
+        return $this;
+    }
+
+    public function getLongitude(): ?string
+    {
+        return $this->longitude;
+    }
+
+    public function setLongitude(string $longitude): self
+    {
+        $this->longitude = $longitude;
 
         return $this;
     }

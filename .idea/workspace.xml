@@ -20,29 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3649c8b-93cf-408c-827d-60504ffd6d46" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/BrandController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/CarController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/DoctorController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/DoctorOfficeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/ReportController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/VisiteurController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Doctor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/DoctorRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Dashboard/Brand/all.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Dashboard/Car/all.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Dashboard/Dashboard.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Dashboard/Doctor/all.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Dashboard/DoctorOffice/all.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Dashboard/Report/all.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Dashboard/User/all.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/main.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201002161339.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201003083932.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/DoctorFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/DoctorOfficeFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/ExpenseCategoryFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/ExpenseReportFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/ExpenseReportStatuesFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/ExportReportLinesFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gsb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gsb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20200930152639.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/dashboard/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/dashboard/dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/UsersRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UsersRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Home/Home.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20200929185548.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20200929185548.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201001085019.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20201001085019.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Doctor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Doctor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/DoctorOffice.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/DoctorOffice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +165,10 @@
       <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
       <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/mattwells/faker-vehicle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1iCGF335gJBqaYb3cHQVJC5uJ7f" />
@@ -186,6 +188,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/gsb_web/gsb_application" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -215,6 +218,9 @@
       <workItem from="1601487575070" duration="5855000" />
       <workItem from="1601531882356" duration="12074000" />
       <workItem from="1601548978543" duration="11750000" />
+      <workItem from="1601712805474" duration="2240000" />
+      <workItem from="1601723763567" duration="3940000" />
+      <workItem from="1601792533360" duration="459000" />
     </task>
     <servers />
   </component>
@@ -241,31 +247,48 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1601405349559" />
-    <state x="565" y="189" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601553844554">
+    <state x="765" y="222" key="#com.intellij.ide.util.MemberChooser" timestamp="1601725660127">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="565" y="189" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1601553844554" />
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601556119587">
+    <state x="765" y="222" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1601725660127" />
+    <state x="565" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601726224024">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="565" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1601726224024" />
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601726665758">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="-1230" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1080/0.0.1920.1080@-1920.0.1920.1080" timestamp="1601484926866" />
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1601556119587" />
-    <state x="655" y="305" key="FileChooserDialogImpl" timestamp="1601454849142">
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1601726665758" />
+    <state x="655" y="305" key="FileChooserDialogImpl" timestamp="1601723769710">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="655" y="305" key="FileChooserDialogImpl/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1601723769710" />
     <state x="655" y="305" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1601454849142" />
-    <state x="769" y="263" key="NewPhpClassDialog" timestamp="1601554338118">
+    <state x="769" y="263" key="NewPhpClassDialog" timestamp="1601726104692">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="-1151" y="263" key="NewPhpClassDialog/-1920.0.1920.1080/0.0.1920.1080@-1920.0.1920.1080" timestamp="1601484854340" />
-    <state x="769" y="263" key="NewPhpClassDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1601554338118" />
+    <state x="769" y="263" key="NewPhpClassDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1601726104692" />
     <state x="794" y="463" key="NewPhpFileDialog" timestamp="1601553915962">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="794" y="463" key="NewPhpFileDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1601553915962" />
+    <state x="667" y="273" width="585" height="534" key="find.popup" timestamp="1601656406430">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="667" y="273" width="585" height="534" key="find.popup/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1601656406430" />
+    <state x="677" y="311" key="refactoring.ChangeSignatureDialog" timestamp="1601727079491">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="677" y="311" key="refactoring.ChangeSignatureDialog/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1601727079491" />
     <state x="616" y="250" key="run.anything.popup" timestamp="1601538421308">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="616" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1601538421308" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1601657226055">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1601657226055" />
   </component>
 </project>

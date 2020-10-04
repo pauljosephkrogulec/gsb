@@ -33,7 +33,7 @@ class Doctor
     private $email;
 
     /**
-     * @ORM\OneToOne(targetEntity=DoctorOffice::class, cascade={"persist", "remove"})
+     * @ORM\ManyToOne(targetEntity=DoctorOffice::class, cascade={"persist", "remove"})
      * @ORM\JoinColumn(nullable=false)
      */
     private $DoctorOffice;
